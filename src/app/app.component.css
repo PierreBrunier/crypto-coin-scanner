@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:400,400i,600,600i');
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Russo&One=swap');
+
 
 html,body{
   margin:0;
   height:120%;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Russo&One', sans-serif;
 
 }
 a{
@@ -44,7 +46,7 @@ a{
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0); backface-visibility: hidden;
     transform: translateZ(0);
-  background:#1B2030 url(../assets/finance-bitcoin.jpg) 50% 0 no-repeat;
+  background:#1B2030 url(../assets/bitcoin-1813503.jpg) 50% 0 no-repeat;
   background-size: 100%;
   background-attachment:fixed;
   animation: grow 360s  linear 5ms infinite;
@@ -126,12 +128,14 @@ a{
 }
 .info p{
   text-align:justify;
-  font-size:1.3em;
+  font-size:1.1em;
   width: 80%;
   display:inline-block ;
 }
 .meta{
   font-style:italic;
+  align-content:center;
+  
 }
 @keyframes grow{
   0% { transform: scale(1) translateY(0px)}
