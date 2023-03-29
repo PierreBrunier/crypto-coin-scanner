@@ -20,9 +20,9 @@ a{
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
-  height:150vw;
-  min-height:400px;
-  max-height:550px;
+  height:40vw;
+  min-height:700px;
+  max-height:1000px;
   min-width:300px;
   color:#eee;
 }
@@ -46,7 +46,7 @@ a{
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0); backface-visibility: hidden;
     transform: translateZ(0);
-  background:#1B2030 url(../assets/bitcoin-1813503.jpg) 50% 0 no-repeat;
+  background:#1B2030 url(../assets/bitcoin-1813503.jpg) 50% 0 ;
   background-size: 100%;
   background-attachment:fixed;
   animation: grow 360s  linear 5ms infinite;
@@ -114,13 +114,14 @@ a{
 }
 .github{
   display:inline-block;
+
   width:50px;
   height:50px;
   border-radius:50%; 
   background:url(../assets/github_PNG80.png) center no-repeat;
   background-size:cover;
   box-shadow:0 5px 5px rgba(0,0,0,0.3);
-  margin-bottom:3px
+  margin-top:3%;
 }
 .info h4, .meta{
   font-size:0.7em
@@ -186,7 +187,7 @@ ul{
 }
 .footer{
   background-color: #24262b;
-    padding: 70px 0;
+    padding: 10px 0;
 }
 .footer-col{
    width: 25%;
@@ -256,6 +257,22 @@ ul{
   color: #24262b;
   background-color: #ffffff;
 }
+
+.main-footer__lower {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid #444;
+  color: #eee;
+  font-size: 0.7rem;
+  text-align: left;
+  text-align: center; }
+  .main-footer__lower a {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 2px; }
+  @media only screen and (max-width: 56.25em) {
+    .main-footer__lower {
+      padding: 3.5rem 0; } }
 
 /*responsive*/
 @media(max-width: 767px){
