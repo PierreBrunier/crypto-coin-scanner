@@ -4,6 +4,7 @@ import { interval } from 'rxjs';
 import { BitcoinService } from '../bitcoin.service';
 import { EthereumService } from '../ethereum.service';
 import { LitecoinService } from '../litecoin.service';
+import { PlotlyService } from '../plotly.service';
 
 
 @Component({
@@ -28,16 +29,24 @@ export class CryptoPricesComponent implements OnInit {
   litecoinKraken!: string;
 
 
-  constructor(private bitcoinService: BitcoinService, private ethereumService: EthereumService, private litecoinService: LitecoinService) {}
+  candlestickData: any[] = [];
+
+
+
+  constructor(private bitcoinService: BitcoinService, private ethereumService: EthereumService, private litecoinService: LitecoinService, private plot:PlotlyService) {}
 
   ngOnInit() {
     // fetch initial prices on component initialization
     this.fetchPrices();
-  
+    
     // fetch latest prices every 10 seconds
     interval(10000).subscribe(() => {
       this.fetchPrices();
     });
+
+    let x:number[] = [1,2,3,4,5];
+    let y:number[] = [1,2,3,4,5];
+    this.plot.plotLine("Line Plot","plot",x,y);
   }
 
   fetchPrices(): void {

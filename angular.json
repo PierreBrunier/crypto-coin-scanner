@@ -27,7 +27,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["src/assets/plotly-2.18.2.min.js"]
           },
           "configurations": {
             "production": {
