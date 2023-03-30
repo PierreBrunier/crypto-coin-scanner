@@ -3,11 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CryptoPricesComponent } from './crypto-prices/crypto-prices.component';
-
+import { ContactComponent } from './contact/contact.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CryptoPricesComponent
+    CryptoPricesComponent,
+    ContactComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule
