@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { interval } from 'rxjs';
 
-import { BitcoinService } from '../bitcoin.service';
-import { EthereumService } from '../ethereum.service';
-import { LitecoinService } from '../litecoin.service';
-import { PlotlyService } from '../plotly.service';
+import { BitcoinService } from './bitcoin.service';
+import { EthereumService } from './ethereum.service';
+import { LitecoinService } from './litecoin.service';
+import { PlotlyService } from './plotly.service';
 
 
 @Component({
@@ -14,6 +14,17 @@ import { PlotlyService } from '../plotly.service';
 })
 
 export class CryptoPricesComponent implements OnInit {
+
+  bitcoinPriceCoinBase: string;
+  bitcoinPriceBinance: string;
+  bitcoinPriceKraken: string;
+  bitcoinPriceBitstamp: string;
+
+  ethereumPriceCoinBase: string;
+  ethereumPriceBinance: string;
+  ethereumPriceKraken: string;
+  ethereumPriceBitstamp: string;
+
   bitcoinCoinbase!: string;
   bitcoinBinance!: string;
   bitcoinKraken!: string;
@@ -33,9 +44,22 @@ export class CryptoPricesComponent implements OnInit {
 
 
 
-  constructor(private bitcoinService: BitcoinService, private ethereumService: EthereumService, private litecoinService: LitecoinService, private plot:PlotlyService) {}
+  constructor(private bitcoinService: BitcoinService, private ethereumService: EthereumService, private litecoinService: LitecoinService, private plot:PlotlyService) {
+    this.bitcoinPriceCoinBase = 'Loading...';
+    this.bitcoinPriceBinance = 'Loading...';
+    this.bitcoinPriceKraken = 'Loading...';
+    this.bitcoinPriceBitstamp = 'Loading...';
+
+    this.ethereumPriceCoinBase = 'Loading...';
+    this.ethereumPriceBinance = 'Loading...';
+    this.ethereumPriceKraken = 'Loading...';
+    this.ethereumPriceBitstamp = 'Loading...';
+  }
 
   ngOnInit() {
+    this.getBitcoinPrice();
+    this.getEthereumPrice();
+
     // fetch initial prices on component initialization
     this.fetchPrices();
     
@@ -62,4 +86,42 @@ export class CryptoPricesComponent implements OnInit {
     this.litecoinService.getLitecoinPriceFromBinance().subscribe(data => this.litecoinBinance = `${(Math.round(data.price * 100) / 100).toFixed(2)} USD`);
     this.litecoinService.getLitecoinPriceFromKraken().subscribe(data => this.litecoinKraken = `${(Math.round(data.a[0] * 100) / 100).toFixed(2)} USD`);
   }
+
+  getBitcoinPrice() {
+    this.bitcoinService.getBitcoinPriceFromCoinbase().subscribe(response => {
+      this.bitcoinPriceCoinBase = response.data.amount + ' ' + response.data.currency;
+    });
+
+    this.bitcoinService.getBitcoinPriceFromBinance().subscribe(response => {
+      this.bitcoinPriceBinance = response.price + ' ' + response.symbol;
+    });
+
+    this.bitcoinService.getBitcoinPriceFromKraken().subscribe(response => {
+      this.bitcoinPriceKraken = response.a[0] + ' USD';
+    });
+
+    this.bitcoinService.getBitcoinPriceFromBitstamp().subscribe(response => {
+      this.bitcoinPriceBitstamp = response + ' USD';
+    });
+  }
+
+  getEthereumPrice() {
+    this.ethereumService.getEthereumPriceFromCoinbase().subscribe(response => {
+      this.ethereumPriceCoinBase = response.data.amount + ' ' + response.data.currency;
+    });
+
+    this.ethereumService.getEthereumPriceFromBinance().subscribe(response => {
+      this.ethereumPriceBinance = response.price + ' ' + response.symbol;
+    });
+
+    this.ethereumService.getEthereumPriceFromKraken().subscribe(response => {
+      this.ethereumPriceKraken = response.a[0] + ' USD'; 
+    });
+
+    this.ethereumService.getEthereumPriceFromBitstamp().subscribe(response => {
+      this.ethereumPriceBitstamp = response + ' USD';
+    });
+  }
+
 }
+
