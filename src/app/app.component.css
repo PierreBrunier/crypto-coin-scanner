@@ -331,3 +331,50 @@ textarea {
   width: 100%;
   height: 200px;
 }
+
+    /* Styles pour le bouton hamburger */
+    .menu {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: url('https://cdn-icons-png.flaticon.com/512/56/56822.png') no-repeat center center;
+      background-size: contain;
+      cursor: pointer;
+    }
+
+    /* Styles pour le menu déroulant */
+    .menu-list {
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      padding: 0;
+      margin: 0;
+      background: #444;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      list-style: none;
+    }
+
+    /* Styles pour les éléments de menu */
+    .menu-item {
+      position: relative;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-family: 'Muli', sans-serif;
+      text-align:center;
+    }
+
+    .menu-item:hover {
+      text-decoration: underline orange;
+      text-underline-offset: 0.3em;
+      /*text-underline-width: 3px;*/
+    }
+    
+    
+    
+    
+    
+    
+
+
