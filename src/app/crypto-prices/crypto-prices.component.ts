@@ -68,9 +68,13 @@ export class CryptoPricesComponent implements OnInit {
       this.fetchPrices();
     });
 
-    let x:number[] = [1,2,3,4,5];
-    let y:number[] = [1,2,3,4,5];
-    this.plot.plotLine("Line Plot","plot",x,y);
+    let CoinBase:number[] = [1,2,3,4,5];
+    let BiNance:number[] = [2,3,4,6,4];
+    let KraKen:number[] = [4,5,2,3,3];
+    let TimeAgo:number[] = [1,2,3,4,5];
+    this.plot.plotLine("Bitcoin prices in the last 15 minutes","plot",CoinBase,BiNance,KraKen,TimeAgo);
+
+    
   }
 
   fetchPrices(): void {

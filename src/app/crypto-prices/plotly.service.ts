@@ -6,16 +6,54 @@ declare let Plotly: any;
   providedIn: 'root'
 })
 
-export class PlotlyService {constructor() { }plotLine(title: string, plotDiv: string, x:number[], y:number[]){           
-    let trace = {
-      x: x,    
-      y: y,   
-      type: 'scatter'   
+export class PlotlyService {
+  constructor() { }
+
+  plotLine(title: string, plotDiv: string, CoinBase:number[], BiNance:number[], KraKen:number[], TimeAgo:number[]){     
+    let coinbase = {
+      x: TimeAgo,    
+      y: CoinBase,   
+      name: 'Coinbase',
+      type: 'scatter',
+      line: {color: 'rgb(0, 76, 153)'}, 
+      hovertemplate: '<i>Price</i>: $%{y:.2f}' +
+                        '<br><b>%{text}</b>',
+      text: ['5mins ago','4mins ago','3mins ago','2mins ago','last minute']
     };
-                  
+
+    let binance = {
+      x: TimeAgo,    
+      y: BiNance,   
+      name: 'Binance',
+      type: 'scatter',
+      line: {color: 'rgb(246, 176, 83)'}, 
+      hovertemplate: '<i>Price</i>: $%{y:.2f}' +
+                        '<br><b>%{text}</b>',
+      text: ['5mins ago','4mins ago','3mins ago','2mins ago','last minute']
+    };
+
+    let kraken = {
+      x: TimeAgo,    
+      y: KraKen,
+      name: 'Kraken',
+      type: 'scatter',
+      line: {color: 'rgb(0, 0, 0)'}, 
+      hovertemplate: '<i>Price</i>: $%{y:.2f}' +
+                        '<br><b>%{text}</b>',
+      text: ['5mins ago','4mins ago','3mins ago','2mins ago','last minute']   
+    };     
+
     let layout = {
-      title:title
+      title:title,
+      showlegend: true,
+      yaxis: {tickprefix: '$'},
+      xaxis: {visible: false}
+      /**legend: {"orientation": "h"}*/
     };
     
-    Plotly.newPlot(plotDiv, [trace], layout);     
-}}
+    Plotly.newPlot(plotDiv, [coinbase,binance,kraken], layout);   
+    
+  }
+
+  
+}

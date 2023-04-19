@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CryptoPricesComponent } from './crypto-prices/crypto-prices.component';
 import { HomeComponent } from './home/home.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

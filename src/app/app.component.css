@@ -55,6 +55,10 @@ a{
 }
 .header h1{
   color: #de980b;
+  font-weight: bold;
+  /*text-shadow: 0 0 10px black;
+  font-size: 100px;
+  -webkit-text-stroke: 1px white;*/
 }
 .header a{
   color:#eee
@@ -370,7 +374,11 @@ textarea {
       text-underline-offset: 0.3em;
       /*text-underline-width: 3px;*/
     }
-    
+
+  
+
+
+
     
     
     
