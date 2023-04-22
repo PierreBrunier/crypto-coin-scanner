@@ -5,7 +5,6 @@ import { EthereumService } from './ethereum.service';
 import { LitecoinService } from './litecoin.service';
 import { PlotlyService } from './plotly.service';
 
-
 @Component({
   selector: 'app-crypto-prices',
   templateUrl: './crypto-prices.component.html',
@@ -42,9 +41,17 @@ export class CryptoPricesComponent implements OnInit {
   bitcoinHistBinance!: number[];
   bitcoinHistKraken!: number[];
 
+  ethereumHistCoinbase!: number[];
+  ethereumHistBinance!: number[];
+  ethereumHistKraken!: number[];
 
-  //arr_name: [][] | undefined;
+  litecoinHistCoinbase!: number[];
+  litecoinHistBinance!: number[];
+  litecoinHistKraken!: number[];
 
+  showBTC = true;
+  showETH = false;
+  showLTC = false;
 
   constructor(private bitcoinService: BitcoinService, private ethereumService: EthereumService, private litecoinService: LitecoinService, private plot:PlotlyService) {
     this.bitcoinPriceCoinBase = 'Loading...';
@@ -59,13 +66,14 @@ export class CryptoPricesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getBitcoinPrice();
-    this.getEthereumPrice();
+    
+    //this.getBitcoinPrice();
+    //this.getEthereumPrice();
 
     // fetch initial prices on component initialization
     this.fetchPrices();
-    
-    // fetch latest prices every 10 seconds
+
+    // fetch latest prices every 10 seconds : 10000
     interval(10000).subscribe(() => {
       this.fetchPrices();
     });
@@ -75,8 +83,9 @@ export class CryptoPricesComponent implements OnInit {
     //let KraKen:number[] = [4,5,2,3,3,4,5,2,3,3,4,5,2,3,3];
     //let TimeAgo:number[] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
     //console.log(this.bitcoinHistCoinbase);
-    this.plot.plotLine("Bitcoin prices in the last 15 minutes","plot",this.bitcoinHistCoinbase,this.bitcoinHistBinance,this.bitcoinHistKraken);
-
+    this.plot.plotLine("Bitcoin prices in the last 15 minutes","plotBTC",this.bitcoinHistCoinbase,this.bitcoinHistBinance,this.bitcoinHistKraken);
+    this.plot.plotLine("Ethereum prices in the last 15 minutes","plotETH",this.ethereumHistCoinbase,this.ethereumHistBinance,this.ethereumHistKraken);
+    this.plot.plotLine("Litecoin prices in the last 15 minutes","plotLTC",this.litecoinHistCoinbase,this.litecoinHistBinance,this.litecoinHistKraken);
     
   }
 
@@ -98,7 +107,7 @@ export class CryptoPricesComponent implements OnInit {
       const firstValues = lastFifteenValues.reverse().map((value: number[]) => Number(value[4]));
       console.log(firstValues);
       this.bitcoinHistCoinbase = firstValues;
-      this.plot.plotLine("Bitcoin prices in the last 15 minutes","plot",this.bitcoinHistCoinbase,this.bitcoinHistBinance,this.bitcoinHistKraken);
+      this.plot.plotLine("Bitcoin prices in the last 15 minutes","plotBTC",this.bitcoinHistCoinbase,this.bitcoinHistBinance,this.bitcoinHistKraken);
 
     });
     this.bitcoinService.getBitcoinPriceHistFromBinance().subscribe(data => {
@@ -106,17 +115,83 @@ export class CryptoPricesComponent implements OnInit {
       const firstValues = lastFifteenValues.map((value: number[]) => Number(value[4]));
       console.log(firstValues);
       this.bitcoinHistBinance = firstValues;
-      this.plot.plotLine("Bitcoin prices in the last 15 minutes","plot",this.bitcoinHistCoinbase,this.bitcoinHistBinance,this.bitcoinHistKraken);
+      this.plot.plotLine("Bitcoin prices in the last 15 minutes","plotBTC",this.bitcoinHistCoinbase,this.bitcoinHistBinance,this.bitcoinHistKraken);
     });
     this.bitcoinService.getBitcoinPriceHistFromKraken().subscribe(data => {
       const lastFifteenValues = data.slice(-15);
       const firstValues = lastFifteenValues.map((value: number[]) => Number(value[4]));
       console.log(firstValues);
       this.bitcoinHistKraken = firstValues;
-      this.plot.plotLine("Bitcoin prices in the last 15 minutes","plot",this.bitcoinHistCoinbase,this.bitcoinHistBinance,this.bitcoinHistKraken);
+      this.plot.plotLine("Bitcoin prices in the last 15 minutes","plotBTC",this.bitcoinHistCoinbase,this.bitcoinHistBinance,this.bitcoinHistKraken);
     });
-    
-    
+
+    this.ethereumService.getEthereumPriceHistFromCoinbase().subscribe(data => {
+      const lastFifteenValues = data.slice(0,15);
+      const firstValues = lastFifteenValues.reverse().map((value: number[]) => Number(value[4]));
+      console.log(firstValues);
+      this.ethereumHistCoinbase = firstValues;
+      this.plot.plotLine("Ethereum prices in the last 15 minutes","plotETH",this.ethereumHistCoinbase,this.ethereumHistBinance,this.ethereumHistKraken);
+
+    });
+    this.ethereumService.getEthereumPriceHistFromBinance().subscribe(data => {
+      const lastFifteenValues = data.slice(-15);
+      const firstValues = lastFifteenValues.map((value: number[]) => Number(value[4]));
+      console.log(firstValues);
+      this.ethereumHistBinance = firstValues;
+      this.plot.plotLine("Ethereum prices in the last 15 minutes","plotETH",this.ethereumHistCoinbase,this.ethereumHistBinance,this.ethereumHistKraken);
+    });
+    this.ethereumService.getEthereumPriceHistFromKraken().subscribe(data => {
+      const lastFifteenValues = data.slice(-15);
+      const firstValues = lastFifteenValues.map((value: number[]) => Number(value[4]));
+      console.log(firstValues);
+      this.ethereumHistKraken = firstValues;
+      this.plot.plotLine("Ethereum prices in the last 15 minutes","plotETH",this.ethereumHistCoinbase,this.ethereumHistBinance,this.ethereumHistKraken);
+    });
+
+    this.litecoinService.getLitecoinPriceHistFromCoinbase().subscribe(data => {
+      const lastFifteenValues = data.slice(0,15);
+      const firstValues = lastFifteenValues.reverse().map((value: number[]) => Number(value[4]));
+      console.log(firstValues);
+      this.litecoinHistCoinbase = firstValues;
+      this.plot.plotLine("Litecoin prices in the last 15 minutes","plotLTC",this.litecoinHistCoinbase,this.litecoinHistBinance,this.litecoinHistKraken);
+
+    });
+    this.litecoinService.getLitecoinPriceHistFromBinance().subscribe(data => {
+      const lastFifteenValues = data.slice(-15);
+      const firstValues = lastFifteenValues.map((value: number[]) => Number(value[4]));
+      console.log(firstValues);
+      this.litecoinHistBinance = firstValues;
+      this.plot.plotLine("Litecoin prices in the last 15 minutes","plotLTC",this.litecoinHistCoinbase,this.litecoinHistBinance,this.litecoinHistKraken);
+    });
+    this.litecoinService.getLitecoinPriceHistFromKraken().subscribe(data => {
+      const lastFifteenValues = data.slice(-15);
+      const firstValues = lastFifteenValues.map((value: number[]) => Number(value[4]));
+      console.log(firstValues);
+      this.litecoinHistKraken = firstValues;
+      this.plot.plotLine("Litecoin prices in the last 15 minutes","plotLTC",this.litecoinHistCoinbase,this.litecoinHistBinance,this.litecoinHistKraken);
+    }); 
+  }
+
+  showPlot(crypto: string) {
+    if (crypto === 'BTC') {
+      this.showBTC = true;
+      this.showETH = false;
+      this.showLTC = false;
+      this.fetchPrices();
+      // code pour afficher le graphique BTC
+    } else if (crypto === 'ETH') {
+      this.showBTC = false;
+      this.showETH = true;
+      this.showLTC = false;
+      this.fetchPrices();
+      // code pour afficher le graphique ETH
+    } else if (crypto === 'LTC') {
+      this.showBTC = false;
+      this.showETH = false;
+      this.showLTC = true;
+      this.fetchPrices();
+      // code pour afficher le graphique LTC
+    }
   }
 
   getBitcoinPrice() {
@@ -164,6 +239,18 @@ export class CryptoPricesComponent implements OnInit {
 
     this.ethereumService.getEthereumPriceFromBitstamp().subscribe(response => {
       this.ethereumPriceBitstamp = response + ' USD';
+    });
+
+    this.ethereumService.getEthereumPriceHistFromCoinbase().subscribe(response => {
+      this.ethereumPriceCoinBase = response;
+    });
+
+    this.ethereumService.getEthereumPriceHistFromBinance().subscribe(response => {
+      this.bitcoinPriceBinance = response;
+    });
+
+    this.ethereumService.getEthereumPriceHistFromKraken().subscribe(response => {
+      this.ethereumPriceKraken = response;
     });
   }
 

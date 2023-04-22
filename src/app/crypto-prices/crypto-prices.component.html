@@ -8,7 +8,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr (click)="showPlot('BTC')">
         <td>
           <img src="assets/Bitcoin.svg.png" alt="logo Bitcoin" style="width: 15px;" > Bitcoin 
         </td>
@@ -16,7 +16,7 @@
         <td>{{ bitcoinBinance }}</td>
         <td>{{ bitcoinKraken }}</td>
       </tr>
-      <tr>
+      <tr (click)="showPlot('ETH')">
         <td>
           <img src="assets/Ethereum.svg.png" alt="logo Ethereum" style="width: 11px;" > Ethereum
         </td>
@@ -24,7 +24,7 @@
         <td>{{ ethereumBinance }}</td>
         <td>{{ ethereumKraken }}</td>
       </tr>
-      <tr>
+      <tr (click)="showPlot('LTC')">
         <td>
           <img src="assets/Litecoin.png" alt="logo Litecoin" style="width: 14px;" > Litecoin
         </td>
@@ -38,7 +38,10 @@
   <p>{{ bitcoinHistBinance }}</p>
   <p>{{ bitcoinHistKraken }}</p>-->
 
-  <div id="plot"></div>
-  <div id="candlestickChart"></div>
+  <div id="plotBTC" *ngIf="showBTC"></div>
+ <div id="plotETH" *ngIf="showETH"></div>
+ <div id="plotLTC" *ngIf="showLTC"></div>
+
+  
 
   
