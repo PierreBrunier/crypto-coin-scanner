@@ -1,0 +1,1888 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>bitcoin-price-tracker documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">bitcoin-price-tracker documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  CryptoPricesComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/crypto-prices/crypto-prices.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-crypto-prices</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./crypto-prices.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./crypto-prices.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#bitcoinBinance" >bitcoinBinance</a>
+                            </li>
+                            <li>
+                                <a href="#bitcoinBitstamp" >bitcoinBitstamp</a>
+                            </li>
+                            <li>
+                                <a href="#bitcoinCoinbase" >bitcoinCoinbase</a>
+                            </li>
+                            <li>
+                                <a href="#bitcoinHistBinance" >bitcoinHistBinance</a>
+                            </li>
+                            <li>
+                                <a href="#bitcoinHistCoinbase" >bitcoinHistCoinbase</a>
+                            </li>
+                            <li>
+                                <a href="#bitcoinHistKraken" >bitcoinHistKraken</a>
+                            </li>
+                            <li>
+                                <a href="#bitcoinKraken" >bitcoinKraken</a>
+                            </li>
+                            <li>
+                                <a href="#bitcoinPriceBinance" >bitcoinPriceBinance</a>
+                            </li>
+                            <li>
+                                <a href="#bitcoinPriceBitstamp" >bitcoinPriceBitstamp</a>
+                            </li>
+                            <li>
+                                <a href="#bitcoinPriceCoinBase" >bitcoinPriceCoinBase</a>
+                            </li>
+                            <li>
+                                <a href="#bitcoinPriceKraken" >bitcoinPriceKraken</a>
+                            </li>
+                            <li>
+                                <a href="#ethereumBinance" >ethereumBinance</a>
+                            </li>
+                            <li>
+                                <a href="#ethereumBitstamp" >ethereumBitstamp</a>
+                            </li>
+                            <li>
+                                <a href="#ethereumCoinbase" >ethereumCoinbase</a>
+                            </li>
+                            <li>
+                                <a href="#ethereumHistBinance" >ethereumHistBinance</a>
+                            </li>
+                            <li>
+                                <a href="#ethereumHistCoinbase" >ethereumHistCoinbase</a>
+                            </li>
+                            <li>
+                                <a href="#ethereumHistKraken" >ethereumHistKraken</a>
+                            </li>
+                            <li>
+                                <a href="#ethereumKraken" >ethereumKraken</a>
+                            </li>
+                            <li>
+                                <a href="#ethereumPriceBinance" >ethereumPriceBinance</a>
+                            </li>
+                            <li>
+                                <a href="#ethereumPriceBitstamp" >ethereumPriceBitstamp</a>
+                            </li>
+                            <li>
+                                <a href="#ethereumPriceCoinBase" >ethereumPriceCoinBase</a>
+                            </li>
+                            <li>
+                                <a href="#ethereumPriceKraken" >ethereumPriceKraken</a>
+                            </li>
+                            <li>
+                                <a href="#litecoinBinance" >litecoinBinance</a>
+                            </li>
+                            <li>
+                                <a href="#litecoinCoinbase" >litecoinCoinbase</a>
+                            </li>
+                            <li>
+                                <a href="#litecoinHistBinance" >litecoinHistBinance</a>
+                            </li>
+                            <li>
+                                <a href="#litecoinHistCoinbase" >litecoinHistCoinbase</a>
+                            </li>
+                            <li>
+                                <a href="#litecoinHistKraken" >litecoinHistKraken</a>
+                            </li>
+                            <li>
+                                <a href="#litecoinKraken" >litecoinKraken</a>
+                            </li>
+                            <li>
+                                <a href="#showBTC" >showBTC</a>
+                            </li>
+                            <li>
+                                <a href="#showETH" >showETH</a>
+                            </li>
+                            <li>
+                                <a href="#showLTC" >showLTC</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#fetchPrices" >fetchPrices</a>
+                            </li>
+                            <li>
+                                <a href="#getBitcoinPrice" >getBitcoinPrice</a>
+                            </li>
+                            <li>
+                                <a href="#getEthereumPrice" >getEthereumPrice</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#showPlot" >showPlot</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(bitcoinService: <a href="../injectables/BitcoinService.html" target="_self">BitcoinService</a>, ethereumService: <a href="../injectables/EthereumService.html" target="_self">EthereumService</a>, litecoinService: <a href="../injectables/LitecoinService.html" target="_self">LitecoinService</a>, plot: <a href="../injectables/PlotlyService.html" target="_self">PlotlyService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>bitcoinService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BitcoinService.html" target="_self" >BitcoinService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ethereumService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/EthereumService.html" target="_self" >EthereumService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>litecoinService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LitecoinService.html" target="_self" >LitecoinService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>plot</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PlotlyService.html" target="_self" >PlotlyService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchPrices"></a>
+                    <span class="name">
+                        <span ><b>fetchPrices</b></span>
+                        <a href="#fetchPrices"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchPrices()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBitcoinPrice"></a>
+                    <span class="name">
+                        <span ><b>getBitcoinPrice</b></span>
+                        <a href="#getBitcoinPrice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBitcoinPrice()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="197"
+                            class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:197</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEthereumPrice"></a>
+                    <span class="name">
+                        <span ><b>getEthereumPrice</b></span>
+                        <a href="#getEthereumPrice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getEthereumPrice()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="227"
+                            class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:227</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showPlot"></a>
+                    <span class="name">
+                        <span ><b>showPlot</b></span>
+                        <a href="#showPlot"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showPlot(crypto: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:175</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>crypto</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bitcoinBinance"></a>
+                    <span class="name">
+                        <span ><b>bitcoinBinance</b></span>
+                        <a href="#bitcoinBinance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bitcoinBitstamp"></a>
+                    <span class="name">
+                        <span ><b>bitcoinBitstamp</b></span>
+                        <a href="#bitcoinBitstamp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bitcoinCoinbase"></a>
+                    <span class="name">
+                        <span ><b>bitcoinCoinbase</b></span>
+                        <a href="#bitcoinCoinbase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bitcoinHistBinance"></a>
+                    <span class="name">
+                        <span ><b>bitcoinHistBinance</b></span>
+                        <a href="#bitcoinHistBinance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bitcoinHistCoinbase"></a>
+                    <span class="name">
+                        <span ><b>bitcoinHistCoinbase</b></span>
+                        <a href="#bitcoinHistCoinbase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bitcoinHistKraken"></a>
+                    <span class="name">
+                        <span ><b>bitcoinHistKraken</b></span>
+                        <a href="#bitcoinHistKraken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bitcoinKraken"></a>
+                    <span class="name">
+                        <span ><b>bitcoinKraken</b></span>
+                        <a href="#bitcoinKraken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bitcoinPriceBinance"></a>
+                    <span class="name">
+                        <span ><b>bitcoinPriceBinance</b></span>
+                        <a href="#bitcoinPriceBinance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bitcoinPriceBitstamp"></a>
+                    <span class="name">
+                        <span ><b>bitcoinPriceBitstamp</b></span>
+                        <a href="#bitcoinPriceBitstamp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bitcoinPriceCoinBase"></a>
+                    <span class="name">
+                        <span ><b>bitcoinPriceCoinBase</b></span>
+                        <a href="#bitcoinPriceCoinBase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bitcoinPriceKraken"></a>
+                    <span class="name">
+                        <span ><b>bitcoinPriceKraken</b></span>
+                        <a href="#bitcoinPriceKraken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ethereumBinance"></a>
+                    <span class="name">
+                        <span ><b>ethereumBinance</b></span>
+                        <a href="#ethereumBinance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ethereumBitstamp"></a>
+                    <span class="name">
+                        <span ><b>ethereumBitstamp</b></span>
+                        <a href="#ethereumBitstamp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ethereumCoinbase"></a>
+                    <span class="name">
+                        <span ><b>ethereumCoinbase</b></span>
+                        <a href="#ethereumCoinbase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ethereumHistBinance"></a>
+                    <span class="name">
+                        <span ><b>ethereumHistBinance</b></span>
+                        <a href="#ethereumHistBinance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ethereumHistCoinbase"></a>
+                    <span class="name">
+                        <span ><b>ethereumHistCoinbase</b></span>
+                        <a href="#ethereumHistCoinbase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ethereumHistKraken"></a>
+                    <span class="name">
+                        <span ><b>ethereumHistKraken</b></span>
+                        <a href="#ethereumHistKraken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ethereumKraken"></a>
+                    <span class="name">
+                        <span ><b>ethereumKraken</b></span>
+                        <a href="#ethereumKraken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ethereumPriceBinance"></a>
+                    <span class="name">
+                        <span ><b>ethereumPriceBinance</b></span>
+                        <a href="#ethereumPriceBinance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ethereumPriceBitstamp"></a>
+                    <span class="name">
+                        <span ><b>ethereumPriceBitstamp</b></span>
+                        <a href="#ethereumPriceBitstamp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ethereumPriceCoinBase"></a>
+                    <span class="name">
+                        <span ><b>ethereumPriceCoinBase</b></span>
+                        <a href="#ethereumPriceCoinBase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ethereumPriceKraken"></a>
+                    <span class="name">
+                        <span ><b>ethereumPriceKraken</b></span>
+                        <a href="#ethereumPriceKraken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="litecoinBinance"></a>
+                    <span class="name">
+                        <span ><b>litecoinBinance</b></span>
+                        <a href="#litecoinBinance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="litecoinCoinbase"></a>
+                    <span class="name">
+                        <span ><b>litecoinCoinbase</b></span>
+                        <a href="#litecoinCoinbase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="litecoinHistBinance"></a>
+                    <span class="name">
+                        <span ><b>litecoinHistBinance</b></span>
+                        <a href="#litecoinHistBinance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="litecoinHistCoinbase"></a>
+                    <span class="name">
+                        <span ><b>litecoinHistCoinbase</b></span>
+                        <a href="#litecoinHistCoinbase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="litecoinHistKraken"></a>
+                    <span class="name">
+                        <span ><b>litecoinHistKraken</b></span>
+                        <a href="#litecoinHistKraken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="litecoinKraken"></a>
+                    <span class="name">
+                        <span ><b>litecoinKraken</b></span>
+                        <a href="#litecoinKraken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showBTC"></a>
+                    <span class="name">
+                        <span ><b>showBTC</b></span>
+                        <a href="#showBTC"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showETH"></a>
+                    <span class="name">
+                        <span ><b>showETH</b></span>
+                        <a href="#showETH"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLTC"></a>
+                    <span class="name">
+                        <span ><b>showLTC</b></span>
+                        <a href="#showLTC"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/crypto-prices/crypto-prices.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { interval } from &#x27;rxjs&#x27;;
+import { BitcoinService } from &#x27;./bitcoin.service&#x27;;
+import { EthereumService } from &#x27;./ethereum.service&#x27;;
+import { LitecoinService } from &#x27;./litecoin.service&#x27;;
+import { PlotlyService } from &#x27;./plotly.service&#x27;;
+
+@Component({
+  selector: &#x27;app-crypto-prices&#x27;,
+  templateUrl: &#x27;./crypto-prices.component.html&#x27;,
+  styleUrls: [&#x27;./crypto-prices.component.css&#x27;]
+})
+
+export class CryptoPricesComponent implements OnInit {
+
+  bitcoinPriceCoinBase: string;
+  bitcoinPriceBinance: string;
+  bitcoinPriceKraken: string;
+  bitcoinPriceBitstamp: string;
+
+  ethereumPriceCoinBase: string;
+  ethereumPriceBinance: string;
+  ethereumPriceKraken: string;
+  ethereumPriceBitstamp: string;
+
+  bitcoinCoinbase!: string;
+  bitcoinBinance!: string;
+  bitcoinKraken!: string;
+  bitcoinBitstamp!: string;
+
+  ethereumCoinbase!: string;
+  ethereumBinance!: string;
+  ethereumKraken!: string;
+  ethereumBitstamp!: string;
+
+  litecoinCoinbase!: string;
+  litecoinBinance!: string;
+  litecoinKraken!: string;
+
+  bitcoinHistCoinbase!: number[];
+  bitcoinHistBinance!: number[];
+  bitcoinHistKraken!: number[];
+
+  ethereumHistCoinbase!: number[];
+  ethereumHistBinance!: number[];
+  ethereumHistKraken!: number[];
+
+  litecoinHistCoinbase!: number[];
+  litecoinHistBinance!: number[];
+  litecoinHistKraken!: number[];
+
+  showBTC &#x3D; true;
+  showETH &#x3D; false;
+  showLTC &#x3D; false;
+
+  constructor(private bitcoinService: BitcoinService, private ethereumService: EthereumService, private litecoinService: LitecoinService, private plot:PlotlyService) {
+    this.bitcoinPriceCoinBase &#x3D; &#x27;Loading...&#x27;;
+    this.bitcoinPriceBinance &#x3D; &#x27;Loading...&#x27;;
+    this.bitcoinPriceKraken &#x3D; &#x27;Loading...&#x27;;
+    this.bitcoinPriceBitstamp &#x3D; &#x27;Loading...&#x27;;
+
+    this.ethereumPriceCoinBase &#x3D; &#x27;Loading...&#x27;;
+    this.ethereumPriceBinance &#x3D; &#x27;Loading...&#x27;;
+    this.ethereumPriceKraken &#x3D; &#x27;Loading...&#x27;;
+    this.ethereumPriceBitstamp &#x3D; &#x27;Loading...&#x27;;
+  }
+
+  ngOnInit() {
+    
+    //this.getBitcoinPrice();
+    //this.getEthereumPrice();
+
+    // fetch initial prices on component initialization
+    this.fetchPrices();
+
+    // fetch latest prices every 10 seconds : 10000
+    interval(10000).subscribe(() &#x3D;&gt; {
+      this.fetchPrices();
+    });
+
+    //let CoinBase:number[] &#x3D; this.bitcoinHistCoinbase;//[1.5,2,3,4,5,1,2,3,4,5,1,2,3,4,5];
+    //let BiNance:number[] &#x3D; [2,3,4,6,4,2,3,4,6,4,2,3,4,6,4];
+    //let KraKen:number[] &#x3D; [4,5,2,3,3,4,5,2,3,3,4,5,2,3,3];
+    //let TimeAgo:number[] &#x3D; [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+    //console.log(this.bitcoinHistCoinbase);
+    this.plot.plotLine(&quot;Bitcoin prices in the last 15 minutes&quot;,&quot;plotBTC&quot;,this.bitcoinHistCoinbase,this.bitcoinHistBinance,this.bitcoinHistKraken);
+    this.plot.plotLine(&quot;Ethereum prices in the last 15 minutes&quot;,&quot;plotETH&quot;,this.ethereumHistCoinbase,this.ethereumHistBinance,this.ethereumHistKraken);
+    this.plot.plotLine(&quot;Litecoin prices in the last 15 minutes&quot;,&quot;plotLTC&quot;,this.litecoinHistCoinbase,this.litecoinHistBinance,this.litecoinHistKraken);
+    
+  }
+
+  fetchPrices(): void {
+    this.bitcoinService.getBitcoinPriceFromCoinbase().subscribe(data &#x3D;&gt; this.bitcoinCoinbase &#x3D; &#x60;${data.data.amount} ${data.data.currency}&#x60;);
+    this.bitcoinService.getBitcoinPriceFromBinance().subscribe(data &#x3D;&gt; this.bitcoinBinance &#x3D; &#x60;${(Math.round(data.price * 100) / 100).toFixed(2)} USD&#x60;);
+    this.bitcoinService.getBitcoinPriceFromKraken().subscribe(data &#x3D;&gt; this.bitcoinKraken &#x3D; &#x60;${(Math.round(data.a[0] * 100) / 100).toFixed(2)}  USD&#x60;);
+    
+    this.ethereumService.getEthereumPriceFromCoinbase().subscribe(data &#x3D;&gt; this.ethereumCoinbase &#x3D; &#x60;${data.data.amount} ${data.data.currency}&#x60;);
+    this.ethereumService.getEthereumPriceFromBinance().subscribe(data &#x3D;&gt; this.ethereumBinance &#x3D; &#x60;${(Math.round(data.price * 100) / 100).toFixed(2)} USD&#x60;);
+    this.ethereumService.getEthereumPriceFromKraken().subscribe(data &#x3D;&gt; this.ethereumKraken &#x3D; &#x60;${(Math.round(data.a[0] * 100) / 100).toFixed(2)} USD&#x60;);
+
+    this.litecoinService.getLitecoinPriceFromCoinbase().subscribe(data &#x3D;&gt; this.litecoinCoinbase &#x3D; &#x60;${data.data.amount} ${data.data.currency}&#x60;);
+    this.litecoinService.getLitecoinPriceFromBinance().subscribe(data &#x3D;&gt; this.litecoinBinance &#x3D; &#x60;${(Math.round(data.price * 100) / 100).toFixed(2)} USD&#x60;);
+    this.litecoinService.getLitecoinPriceFromKraken().subscribe(data &#x3D;&gt; this.litecoinKraken &#x3D; &#x60;${(Math.round(data.a[0] * 100) / 100).toFixed(2)} USD&#x60;);
+
+    this.bitcoinService.getBitcoinPriceHistFromCoinbase().subscribe(data &#x3D;&gt; {
+      const lastFifteenValues &#x3D; data.slice(0,15);
+      const firstValues &#x3D; lastFifteenValues.reverse().map((value: number[]) &#x3D;&gt; Number(value[4]));
+      console.log(firstValues);
+      this.bitcoinHistCoinbase &#x3D; firstValues;
+      this.plot.plotLine(&quot;Bitcoin prices in the last 15 minutes&quot;,&quot;plotBTC&quot;,this.bitcoinHistCoinbase,this.bitcoinHistBinance,this.bitcoinHistKraken);
+
+    });
+    this.bitcoinService.getBitcoinPriceHistFromBinance().subscribe(data &#x3D;&gt; {
+      const lastFifteenValues &#x3D; data.slice(-15);
+      const firstValues &#x3D; lastFifteenValues.map((value: number[]) &#x3D;&gt; Number(value[4]));
+      console.log(firstValues);
+      this.bitcoinHistBinance &#x3D; firstValues;
+      this.plot.plotLine(&quot;Bitcoin prices in the last 15 minutes&quot;,&quot;plotBTC&quot;,this.bitcoinHistCoinbase,this.bitcoinHistBinance,this.bitcoinHistKraken);
+    });
+    this.bitcoinService.getBitcoinPriceHistFromKraken().subscribe(data &#x3D;&gt; {
+      const lastFifteenValues &#x3D; data.slice(-15);
+      const firstValues &#x3D; lastFifteenValues.map((value: number[]) &#x3D;&gt; Number(value[4]));
+      console.log(firstValues);
+      this.bitcoinHistKraken &#x3D; firstValues;
+      this.plot.plotLine(&quot;Bitcoin prices in the last 15 minutes&quot;,&quot;plotBTC&quot;,this.bitcoinHistCoinbase,this.bitcoinHistBinance,this.bitcoinHistKraken);
+    });
+
+    this.ethereumService.getEthereumPriceHistFromCoinbase().subscribe(data &#x3D;&gt; {
+      const lastFifteenValues &#x3D; data.slice(0,15);
+      const firstValues &#x3D; lastFifteenValues.reverse().map((value: number[]) &#x3D;&gt; Number(value[4]));
+      console.log(firstValues);
+      this.ethereumHistCoinbase &#x3D; firstValues;
+      this.plot.plotLine(&quot;Ethereum prices in the last 15 minutes&quot;,&quot;plotETH&quot;,this.ethereumHistCoinbase,this.ethereumHistBinance,this.ethereumHistKraken);
+
+    });
+    this.ethereumService.getEthereumPriceHistFromBinance().subscribe(data &#x3D;&gt; {
+      const lastFifteenValues &#x3D; data.slice(-15);
+      const firstValues &#x3D; lastFifteenValues.map((value: number[]) &#x3D;&gt; Number(value[4]));
+      console.log(firstValues);
+      this.ethereumHistBinance &#x3D; firstValues;
+      this.plot.plotLine(&quot;Ethereum prices in the last 15 minutes&quot;,&quot;plotETH&quot;,this.ethereumHistCoinbase,this.ethereumHistBinance,this.ethereumHistKraken);
+    });
+    this.ethereumService.getEthereumPriceHistFromKraken().subscribe(data &#x3D;&gt; {
+      const lastFifteenValues &#x3D; data.slice(-15);
+      const firstValues &#x3D; lastFifteenValues.map((value: number[]) &#x3D;&gt; Number(value[4]));
+      console.log(firstValues);
+      this.ethereumHistKraken &#x3D; firstValues;
+      this.plot.plotLine(&quot;Ethereum prices in the last 15 minutes&quot;,&quot;plotETH&quot;,this.ethereumHistCoinbase,this.ethereumHistBinance,this.ethereumHistKraken);
+    });
+
+    this.litecoinService.getLitecoinPriceHistFromCoinbase().subscribe(data &#x3D;&gt; {
+      const lastFifteenValues &#x3D; data.slice(0,15);
+      const firstValues &#x3D; lastFifteenValues.reverse().map((value: number[]) &#x3D;&gt; Number(value[4]));
+      console.log(firstValues);
+      this.litecoinHistCoinbase &#x3D; firstValues;
+      this.plot.plotLine(&quot;Litecoin prices in the last 15 minutes&quot;,&quot;plotLTC&quot;,this.litecoinHistCoinbase,this.litecoinHistBinance,this.litecoinHistKraken);
+
+    });
+    this.litecoinService.getLitecoinPriceHistFromBinance().subscribe(data &#x3D;&gt; {
+      const lastFifteenValues &#x3D; data.slice(-15);
+      const firstValues &#x3D; lastFifteenValues.map((value: number[]) &#x3D;&gt; Number(value[4]));
+      console.log(firstValues);
+      this.litecoinHistBinance &#x3D; firstValues;
+      this.plot.plotLine(&quot;Litecoin prices in the last 15 minutes&quot;,&quot;plotLTC&quot;,this.litecoinHistCoinbase,this.litecoinHistBinance,this.litecoinHistKraken);
+    });
+    this.litecoinService.getLitecoinPriceHistFromKraken().subscribe(data &#x3D;&gt; {
+      const lastFifteenValues &#x3D; data.slice(-15);
+      const firstValues &#x3D; lastFifteenValues.map((value: number[]) &#x3D;&gt; Number(value[4]));
+      console.log(firstValues);
+      this.litecoinHistKraken &#x3D; firstValues;
+      this.plot.plotLine(&quot;Litecoin prices in the last 15 minutes&quot;,&quot;plotLTC&quot;,this.litecoinHistCoinbase,this.litecoinHistBinance,this.litecoinHistKraken);
+    }); 
+  }
+
+  showPlot(crypto: string) {
+    if (crypto &#x3D;&#x3D;&#x3D; &#x27;BTC&#x27;) {
+      this.showBTC &#x3D; true;
+      this.showETH &#x3D; false;
+      this.showLTC &#x3D; false;
+      this.fetchPrices();
+      // code pour afficher le graphique BTC
+    } else if (crypto &#x3D;&#x3D;&#x3D; &#x27;ETH&#x27;) {
+      this.showBTC &#x3D; false;
+      this.showETH &#x3D; true;
+      this.showLTC &#x3D; false;
+      this.fetchPrices();
+      // code pour afficher le graphique ETH
+    } else if (crypto &#x3D;&#x3D;&#x3D; &#x27;LTC&#x27;) {
+      this.showBTC &#x3D; false;
+      this.showETH &#x3D; false;
+      this.showLTC &#x3D; true;
+      this.fetchPrices();
+      // code pour afficher le graphique LTC
+    }
+  }
+
+  getBitcoinPrice() {
+    this.bitcoinService.getBitcoinPriceFromCoinbase().subscribe(response &#x3D;&gt; {
+      this.bitcoinPriceCoinBase &#x3D; response.data.amount + &#x27; &#x27; + response.data.currency;
+    });
+
+    this.bitcoinService.getBitcoinPriceFromBinance().subscribe(response &#x3D;&gt; {
+      this.bitcoinPriceBinance &#x3D; response.price + &#x27; &#x27; + response.symbol;
+    });
+
+    this.bitcoinService.getBitcoinPriceFromKraken().subscribe(response &#x3D;&gt; {
+      this.bitcoinPriceKraken &#x3D; response.a[0] + &#x27; USD&#x27;;
+    });
+
+    this.bitcoinService.getBitcoinPriceFromBitstamp().subscribe(response &#x3D;&gt; {
+      this.bitcoinPriceBitstamp &#x3D; response + &#x27; USD&#x27;;
+    });
+
+    this.bitcoinService.getBitcoinPriceHistFromCoinbase().subscribe(response &#x3D;&gt; {
+      this.bitcoinPriceCoinBase &#x3D; response;
+    });
+
+    this.bitcoinService.getBitcoinPriceHistFromBinance().subscribe(response &#x3D;&gt; {
+      this.bitcoinPriceBinance &#x3D; response;
+    });
+
+    this.bitcoinService.getBitcoinPriceHistFromKraken().subscribe(response &#x3D;&gt; {
+      this.bitcoinPriceKraken &#x3D; response;
+    });
+  }
+
+  getEthereumPrice() {
+    this.ethereumService.getEthereumPriceFromCoinbase().subscribe(response &#x3D;&gt; {
+      this.ethereumPriceCoinBase &#x3D; response.data.amount + &#x27; &#x27; + response.data.currency;
+    });
+
+    this.ethereumService.getEthereumPriceFromBinance().subscribe(response &#x3D;&gt; {
+      this.ethereumPriceBinance &#x3D; response.price + &#x27; &#x27; + response.symbol;
+    });
+
+    this.ethereumService.getEthereumPriceFromKraken().subscribe(response &#x3D;&gt; {
+      this.ethereumPriceKraken &#x3D; response.a[0] + &#x27; USD&#x27;; 
+    });
+
+    this.ethereumService.getEthereumPriceFromBitstamp().subscribe(response &#x3D;&gt; {
+      this.ethereumPriceBitstamp &#x3D; response + &#x27; USD&#x27;;
+    });
+
+    this.ethereumService.getEthereumPriceHistFromCoinbase().subscribe(response &#x3D;&gt; {
+      this.ethereumPriceCoinBase &#x3D; response;
+    });
+
+    this.ethereumService.getEthereumPriceHistFromBinance().subscribe(response &#x3D;&gt; {
+      this.bitcoinPriceBinance &#x3D; response;
+    });
+
+    this.ethereumService.getEthereumPriceHistFromKraken().subscribe(response &#x3D;&gt; {
+      this.ethereumPriceKraken &#x3D; response;
+    });
+  }
+
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Crypto&lt;/th&gt;
+        &lt;th&gt;Coinbase&lt;/th&gt;
+        &lt;th&gt;Binance&lt;/th&gt;
+        &lt;th&gt;Kraken&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr (click)&#x3D;&quot;showPlot(&#x27;BTC&#x27;)&quot;&gt;
+        &lt;td&gt;
+          &lt;img src&#x3D;&quot;assets/Bitcoin.svg.png&quot; alt&#x3D;&quot;logo Bitcoin&quot; style&#x3D;&quot;width: 15px;&quot; &gt; Bitcoin 
+        &lt;/td&gt;
+        &lt;td&gt;{{ bitcoinCoinbase }}&lt;/td&gt;
+        &lt;td&gt;{{ bitcoinBinance }}&lt;/td&gt;
+        &lt;td&gt;{{ bitcoinKraken }}&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr (click)&#x3D;&quot;showPlot(&#x27;ETH&#x27;)&quot;&gt;
+        &lt;td&gt;
+          &lt;img src&#x3D;&quot;assets/Ethereum.svg.png&quot; alt&#x3D;&quot;logo Ethereum&quot; style&#x3D;&quot;width: 11px;&quot; &gt; Ethereum
+        &lt;/td&gt;
+        &lt;td&gt;{{ ethereumCoinbase }}&lt;/td&gt;
+        &lt;td&gt;{{ ethereumBinance }}&lt;/td&gt;
+        &lt;td&gt;{{ ethereumKraken }}&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr (click)&#x3D;&quot;showPlot(&#x27;LTC&#x27;)&quot;&gt;
+        &lt;td&gt;
+          &lt;img src&#x3D;&quot;assets/Litecoin.png&quot; alt&#x3D;&quot;logo Litecoin&quot; style&#x3D;&quot;width: 14px;&quot; &gt; Litecoin
+        &lt;/td&gt;
+        &lt;td&gt;{{ litecoinCoinbase }}&lt;/td&gt;
+        &lt;td&gt;{{ litecoinBinance }}&lt;/td&gt;
+        &lt;td&gt;{{ litecoinKraken }}&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+  &lt;!--&lt;p&gt;{{ bitcoinHistCoinbase }}&lt;/p&gt;
+  &lt;p&gt;{{ bitcoinHistBinance }}&lt;/p&gt;
+  &lt;p&gt;{{ bitcoinHistKraken }}&lt;/p&gt;--&gt;
+
+  &lt;div id&#x3D;&quot;plotBTC&quot; *ngIf&#x3D;&quot;showBTC&quot;&gt;&lt;/div&gt;
+ &lt;div id&#x3D;&quot;plotETH&quot; *ngIf&#x3D;&quot;showETH&quot;&gt;&lt;/div&gt;
+ &lt;div id&#x3D;&quot;plotLTC&quot; *ngIf&#x3D;&quot;showLTC&quot;&gt;&lt;/div&gt;
+
+  
+
+  </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./crypto-prices.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  th {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  td {
+    font-size: 16px;
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  td:first-child {
+    font-weight: bold;
+  }
+  
+  .crypto {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1a1a1a;
+    text-shadow: 2px 2px #fff;
+  }
+  
+  .crypto img {
+    width: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+  
+    th {
+      font-size: 16px;
+    }
+  
+    td {
+      font-size: 14px;
+    }
+  
+    .crypto {
+      font-size: 24px;
+    }
+  
+    .crypto img {
+      width: 40px;
+    }
+  }
+  </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><table>    <thead>      <tr>        <th>Crypto</th>        <th>Coinbase</th>        <th>Binance</th>        <th>Kraken</th>      </tr>    </thead>    <tbody>      <tr (click)="showPlot(\'BTC\')">        <td>          <img src="assets/Bitcoin.svg.png" alt="logo Bitcoin" style="width: 15px;" > Bitcoin         </td>        <td>{{ bitcoinCoinbase }}</td>        <td>{{ bitcoinBinance }}</td>        <td>{{ bitcoinKraken }}</td>      </tr>      <tr (click)="showPlot(\'ETH\')">        <td>          <img src="assets/Ethereum.svg.png" alt="logo Ethereum" style="width: 11px;" > Ethereum        </td>        <td>{{ ethereumCoinbase }}</td>        <td>{{ ethereumBinance }}</td>        <td>{{ ethereumKraken }}</td>      </tr>      <tr (click)="showPlot(\'LTC\')">        <td>          <img src="assets/Litecoin.png" alt="logo Litecoin" style="width: 14px;" > Litecoin        </td>        <td>{{ litecoinCoinbase }}</td>        <td>{{ litecoinBinance }}</td>        <td>{{ litecoinKraken }}</td>      </tr>    </tbody>  </table>  <!--<p>{{ bitcoinHistCoinbase }}</p>  <p>{{ bitcoinHistBinance }}</p>  <p>{{ bitcoinHistKraken }}</p>-->  <div id="plotBTC" *ngIf="showBTC"></div> <div id="plotETH" *ngIf="showETH"></div> <div id="plotLTC" *ngIf="showLTC"></div>    </div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'about-us'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'contact'},{'name': 'CryptoPricesComponent', 'selector': 'app-crypto-prices'},{'name': 'FaqComponent', 'selector': 'faq'},{'name': 'HomeComponent', 'selector': 'app-home'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CryptoPricesComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CryptoPricesComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
